@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despre Noi | Mobila Premium</title>
+    <style>
+        /* Stiluri Generale (Identice cu restul site-ului) */
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { color: #333; line-height: 1.6; background-color: #f9f9f9; }
+        a { text-decoration: none; color: inherit; }
+        .container { width: 85%; max-width: 1200px; margin: 0 auto; }
+
+        /* Meniu */
+        header { background: #ffffff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; }
+        .logo { font-size: 24px; font-weight: bold; color: #b88e2f; }
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 20px; }
+        nav ul li a:hover { color: #b88e2f; }
+
+        /* Pagina Despre Noi */
+        .about-page { padding: 60px 0; }
+        .section-title { font-size: 32px; color: #111; text-align: center; margin-bottom: 40px; }
+        
+        /* Secțiune Poveste (Text + Imagine) */
+        .story-section { display: flex; flex-wrap: wrap; gap: 40px; align-items: center; margin-bottom: 60px; }
+        .story-text { flex: 12; min-width: 300px; }
+        .story-text h2 { font-size: 26px; color: #b88e2f; margin-bottom: 20px; }
+        .story-text p { margin-bottom: 15px; color: #555; text-align: justify; }
+        .story-img { flex: 10; min-width: 300px; }
+        .story-img img { width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); object-fit: cover; height: 350px; }
+
+        /* Secțiune Valori */
+        .values-section { background: #ffffff; padding: 50px 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; }
+        .values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 30px; }
+        .value-card { padding: 20px; border: 1px solid #eee; border-radius: 6px; transition: 0.3s; }
+        .value-card:hover { border-color: #b88e2f; background: #fffdf7; }
+        .value-card .icon { font-size: 40px; margin-bottom: 10px; display: inline-block; }
+        .value-card h3 { font-size: 20px; margin-bottom: 10px; color: #111; }
+        .value-card p { color: #666; font-size: 15px; }
+
+        /* Subsol */
+        footer { background: #222; color: white; text-align: center; padding: 20px 0; font-size: 14px; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+    <!-- Meniu (Conectat cu celelalte pagini) -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">MobilaDesign</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Acasă</a></li>
+                    <li><a href="despre.html" style="color: #b88e2f; font-weight: bold;">Despre Noi</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container about-page">
+        <h1 class="section-title">Cine Suntem Noi</h1>
+
+        <!-- Povestea Noastră -->
+        <section class="story-section">
+            <div class="story-text">
+                <h2>Pasiune pentru Detalii și Calitate</h2>
+                <p>Am început această călătorie din dorința de a transforma casele în cămine primitoare și elegante. Pentru noi, mobilierul nu reprezintă doar piese de utilitate, ci elemente centrale de design care reflectă personalitatea fiecărui client.</p>
+                <p>Fiecare proiect pe care îl realizăm combină tehnologia modernă de producție cu atenția meticuloasă la finisaje a meșteșugarilor noștri. Lucrăm doar cu furnizori de top pentru a ne asigura că materialele folosite – de la lemn masiv la MDF sau accesorii hardware – garantează o durabilitate de lungă durată.</p>
+                <p>Suntem specializați în mobilier personalizat, adaptat perfect spațiului tău, oferind consultanță completă de la faza de schiță 3D până la montajul final în locuința ta.</p>
+            </div>
+            <div class="story-img">
+                <!-- Imagine demo din atelier de tâmplărie/design -->
+                <img src="https://unsplash.com" alt="Atelier de Mobilă">
+            </div>
+        </section>
+
+        <!-- Valorile Noastre -->
+        <section class="values-section">
+            <h2 style="font-size: 26px;">Ce Ne Ghidează</h2>
+            <div class="values-grid">
+                
+                <!-- Valoarea 1 -->
+                <div class="value-card">
+                    <span class="icon">✨</span>
+                    <h3>Calitate Premium</h3>
+                    <p>Nu facem compromisuri. Selectăm doar materiale rezistente și accesorii durabile pentru fiecare piesă.</p>
+                </div>
+
+                <!-- Valoarea 2 -->
+                <div class="value-card">
+                    <span class="icon">📐</span>
+                    <h3>Design Personalizat</h3>
+                    <p>Fiecare proiect este unic. Adaptăm dimensiunile, culorile și compartimentarea după nevoile tale exacte.</p>
+                </div>
+
+                <!-- Valoarea 3 -->
+                <div class="value-card">
+                    <span class="icon">🤝</span>
+                    <h3>Încredere & Respect</h3>
+                    <p>Respectăm termenele de livrare stabilite și oferim transparență totală în privința costurilor.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Subsol -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 MobilaDesign. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
