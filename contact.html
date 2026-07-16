@@ -71,7 +71,7 @@
                 </div>
                 <div class="info-item">
                     <h3>✉️ Email</h3>
-                    <p>mariumecu@yahoo.com</p>
+                    <p>mecumarius@yahoo.com</p>
                 </div>
                 <div class="info-item">
                     <h3>📍 Showroom / Atelier</h3>
@@ -86,11 +86,11 @@
             <!-- Formular de Contact Direct -->
             <div class="contact-form">
                 <h2 style="margin-bottom: 20px; font-size: 22px;">Trimite un mesaj rapid</h2>
-                <form action="#">
-                    <input type="text" placeholder="Numele tău" required>
-                    <input type="email" placeholder="Adresa de email" required>
-                    <input type="text" placeholder="Subiect (ex: Ofertă bucătărie)">
-                    <textarea rows="4" placeholder="Mesajul tău detaliat..." required></textarea>
+                <form action="https://formspree.io/f/mkodoeoe" method="POST">
+                    <input type="text" name="nume" placeholder="Numele tău" required>
+                    <input type="email" name="email" placeholder="Adresa de email" required>
+                    <input type="text" name="subiect" placeholder="Subiect (ex: Ofertă bucătărie)">
+                    <textarea name="mesaj" rows="4" placeholder="Mesajul tău detaliat..." required></textarea>
                     <button type="submit">Trimite Mesajul</button>
                 </form>
             </div>
