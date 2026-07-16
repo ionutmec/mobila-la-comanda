@@ -1,0 +1,138 @@
+html<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobilă Premium | Design și Confort</title>
+    <style>
+        /* Stiluri Generale */
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { color: #333; line-height: 1.6; background-color: #f9f9f9; }
+        a { text-decoration: none; color: inherit; }
+        .container { width: 85%; max-width: 1200px; margin: 0 auto; }
+
+        /* Meniu (Header) */
+        header { background: #ffffff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; }
+        .logo { font-size: 24px; font-weight: bold; color: #b88e2f; }
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 20px; }
+        nav ul li a:hover { color: #b88e2f; }
+
+        /* Secțiunea Principală (Hero) */
+        .hero { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://unsplash.com') no-repeat center center/cover; height: 60vh; display: flex; align-items: center; color: white; text-align: center; }
+        .hero-content { margin: 0 auto; max-width: 600px; }
+        .hero h1 { font-size: 42px; margin-bottom: 20px; }
+        .btn { display: inline-block; background: #b88e2f; color: white; padding: 12px 30px; margin-top: 20px; border-radius: 4px; font-weight: bold; }
+        .btn:hover { background: #967325; }
+
+        /* Produse (Catalog) */
+        .products { padding: 60px 0; }
+        .section-title { text-align: center; font-size: 32px; margin-bottom: 40px; color: #111; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card img { width: 100%; height: 250px; object-fit: cover; }
+        .card-body { padding: 20px; }
+        .card-title { font-size: 20px; margin-bottom: 10px; }
+        .price { font-size: 18px; font-weight: bold; color: #b88e2f; margin-bottom: 15px; }
+
+        /* Contact */
+        .contact { background: #f4f4f4; padding: 60px 0; text-align: center; }
+        form { max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; }
+        form input, form textarea { padding: 12px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; }
+        form button { background: #333; color: white; border: none; padding: 12px; cursor: pointer; font-size: 16px; border-radius: 4px; }
+        form button:hover { background: #555; }
+
+        /* Subsol (Footer) */
+        footer { background: #222; color: white; text-align: center; padding: 20px 0; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <!-- Meniu -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">MobilaDesign</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Acasă</a></li>
+                    <li><a href="#produse">Produse</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Descoperă Confortul pentru Casa Ta</h1>
+            <p>Mobilier modern realizat din materiale premium, adaptat stilului tău de viață.</p>
+            <a href="#produse" class="btn">Vezi Colecția</a>
+        </div>
+    </section>
+
+    <!-- Secțiune Produse -->
+    <section id="produse" class="products">
+        <div class="container">
+            <h2 class="section-title">Produsele Noastre</h2>
+            <div class="grid">
+                
+                <!-- Produs 1 -->
+                <div class="card">
+                    <img src="https://unsplash.com" alt="Canapea Elegantă">
+                    <div class="card-body">
+                        <h3 class="card-title">Canapea Velvet 3 Locuri</h3>
+                        <p class="price">3.499 LEI</p>
+                        <p>Canapea extensibilă cu stofă premium catifelată și picioare din lemn masiv.</p>
+                    </div>
+                </div>
+
+                <!-- Produs 2 -->
+                <div class="card">
+                    <img src="https://unsplash.com" alt="Masă Sufragerie">
+                    <div class="card-body">
+                        <h3 class="card-title">Masă din Lemn de Stejar</h3>
+                        <p class="price">2.199 LEI</p>
+                        <p>Masă fixă pentru 6 persoane, realizată integral din stejar sălbatic finisat cu ulei.</p>
+                    </div>
+                </div>
+
+                <!-- Produs 3 -->
+                <div class="card">
+                    <img src="https://unsplash.com" alt="Pat Dormitor">
+                    <div class="card-body">
+                        <h3 class="card-title">Pat Tapițat King Size</h3>
+                        <p class="price">4.200 LEI</p>
+                        <p>Include somieră rabatabilă și spațiu generos de depozitare dedesubt.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Secțiune Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Cere o Ofertă Personalizată</h2>
+            <p style="margin-bottom: 30px;">Lasă-ne un mesaj și te contactăm în cel mai scurt timp pentru detalii.</p>
+            <form action="#">
+                <input type="text" placeholder="Numele tău" required>
+                <input type="email" placeholder="Adresa de email" required>
+                <textarea rows="5" placeholder="Ce piesă de mobilă te interesează (dimensiuni, culori etc.)" required></textarea>
+                <button type="submit">Trimite Mesajul</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Subsol -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 MobilaDesign. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
