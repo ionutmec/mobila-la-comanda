@@ -19,12 +19,46 @@ html<!DOCTYPE html>
         nav ul li { margin-left: 20px; }
         nav ul li a:hover { color: #b88e2f; }
 
-        /* Secțiunea Principală (Hero) */
-        .hero { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('imagini/banner.jpeg') no-repeat center center/cover; height: 60vh; display: flex; align-items: center; color: white; text-align: center; }
-        .hero-content { margin: 0 auto; max-width: 600px; }
+         /* Noua Secțiune Hero cu Video */
+        .hero { 
+            position: relative; 
+            height: 60vh; 
+            display: flex; 
+            align-items: center; 
+            color: white; 
+            text-align: center; 
+            overflow: hidden; 
+        }
+        /* Codul care forțează clipul să ocupe tot fundalul */
+        .hero video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 1;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+        /* O mască întunecată peste video pentru ca textul alb să fie ușor de citit */
+        .hero-overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 2;
+        }
+        .hero-content { 
+            position: relative;
+            z-index: 3; 
+            margin: 0 auto; 
+            max-width: 600px; 
+        }
         .hero h1 { font-size: 42px; margin-bottom: 20px; }
         .btn { display: inline-block; background: #b88e2f; color: white; padding: 12px 30px; margin-top: 20px; border-radius: 4px; font-weight: bold; }
         .btn:hover { background: #967325; }
+
 
         /* Produse (Catalog) */
         .products { padding: 60px 0; }
